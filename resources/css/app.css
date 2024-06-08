@@ -1,0 +1,265 @@
+:root {
+    --primary: #fffb55;
+    --secondary: #e8012b;
+    --white: #FFF;
+    --black: #000;
+
+    --fontPrimary: "Poppins", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fontPrimary);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    color: var(--white)!important;
+    font-weight: bold;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .swiper-slide img {
+        height: 40rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+
+.header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.header .header__logo {
+    color: var(--secondary);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header .header__logo span {
+    color: var(--black);
+}
+
+.header .header__container {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav .nav__link {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.nav--active {
+    display: flex;
+
+}
+
+@media (max-width: 768px) {
+    .nav--active {
+        position: absolute;
+        flex-direction: column;
+        z-index: 2;
+        top: 7rem;
+        right: 3rem;
+        gap: 2rem;
+        background-color: var(--white);
+        padding: 1rem;
+    }
+}
+
+.nav--disabled {
+    display: none;
+}
+
+
+.header .header__button {
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .header .header__button {
+        display: none;
+    }
+}
+
+.socialmenu {
+    display: flex;
+    position: fixed;
+    width: 3rem;
+    bottom: 10px;
+    right: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+}
+
+.socialmenu .socialmenu__link {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--primary);
+    padding: 2rem 0;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer .nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.copyright {
+    color: var(--black);
+    font-weight: 700;
+    border-top: 1px solid #e1e1e1;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    padding: 6rem 0;
+}
+
+.content-main__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-main__info p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content-main__info p:last-of-type {
+    margin-bottom: 0;
+}
+
+.heading {
+    font-weight: 500;
+    padding-left: 1rem;
+    border-left: 2px solid var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.heading span {
+    font-size: 3rem;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.hero-bg {
+    background-color: #e1e1e1;
+}
+
+.hero {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.hero__grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.hero__img {
+    height: 8rem;
+    width: 8rem;
+}
+
+@media (min-width: 768px) {
+    .hero__img {
+        height: 6rem;
+        width: 6rem;
+    }
+}
