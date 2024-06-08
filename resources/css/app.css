@@ -1,5 +1,5 @@
 :root {
-    --primary: #fffb55;
+    --primary: #495057;
     --secondary: #e8012b;
     --white: #FFF;
     --black: #000;
@@ -100,7 +100,7 @@ button {
 }
 
 .header .header__logo span {
-    color: var(--black);
+    color: var(--white);
 }
 
 .header .header__container {
@@ -113,7 +113,7 @@ button {
 }
 
 .nav .nav__link {
-    color: var(--black);
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -183,7 +183,7 @@ button {
 }
 
 .copyright {
-    color: var(--black);
+    color: var(--white);
     font-weight: 700;
     border-top: 1px solid #e1e1e1;
     width: 100%;
@@ -193,7 +193,6 @@ button {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 90% 10%;
     padding: 6rem 0;
 }
 

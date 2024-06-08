@@ -6,9 +6,10 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
+                'resources/css/service.css',
                 'resources/js/app.js',
                 '/resources/js/swiper.js',
-                '/resources/js/pages.js'
+                '/resources/js/index.js'
             ],
             refresh: true,
         }),

@@ -1,0 +1,31 @@
+
+.service-hero {
+    position: relative;
+    height: 30rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/public/img/img-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.service-hero__title {
+    position: absolute;
+    color: var(--white);
+    font-size: 2.5rem;
+    top: 10rem;
+    left: 2rem;
+}
+
+@media (min-width: 768px) {
+    .service-hero__title {
+        font-size: 3rem;
+        width: 35rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-hero__title {
+        width: 40rem;
+        font-size: 3.5rem;
+    }
+}

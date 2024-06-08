@@ -51,9 +51,6 @@
             </div>
         </main>
 
-        <aside>
-            Esto es un aside
-        </aside>
     </div>
 
     <div class="hero-bg">
@@ -127,9 +124,6 @@
             </div>
         </main>
 
-        <aside>
-            Esto es un aside
-        </aside>
     </div>
 
     <div class="socialmenu">
