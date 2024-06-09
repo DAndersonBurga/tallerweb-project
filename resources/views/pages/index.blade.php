@@ -2,6 +2,44 @@
 
 @section("content")
 
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev,
+        .swiper-pagination {
+            color: var(--white)!important;
+            font-weight: bold;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .swiper-slide img {
+                height: 40rem;
+            }
+        }
+
+    </style>
+
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -31,26 +69,22 @@
                         <span>22 años de experiencia</span>
                     </h1>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laboriosam sint dolorum vel atque
-                        earum
-                        aspernatur dolores nulla incidunt impedit reiciendis beatae, quaerat ea est hic exercitationem
-                        sequi
-                        ad repudiandae!</p>
+                    <p>En AutogasRacho, nos dedicamos a brindar soluciones integrales para tu automóvil.
+                        Con más de 22 años de experiencia en el sector, somos tu destino confiable para
+                        mantener tu vehículo en óptimas condiciones y adaptarlo a tus necesidades individuales.</p>
 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde dolores repellendus,
-                        dolorem
-                        exercitationem delectus reiciendis odio dicta provident et natus recusandae, est ullam saepe,
-                        ipsam
-                        praesentium! Hic, architecto ducimus.</p>
+                    <p>Nos enorgullecemos de ofrecer un servicio de alta calidad y atención personalizada para
+                        cada cliente. ¡Visítanos y descubre cómo puedes ahorrar dinero y contribuir al cuidado
+                        del medio ambiente con nuestras conversiones de gas GLP y servicios generales de
+                        reparación!</p>
                 </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bLvd1IIZ1x8?si=OpPAv7Y8hv8xTqQQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PQWxIGABv6Q?si=ILsLb3d93kJe1Lvx"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
             </div>
         </main>
-
     </div>
 
     <div class="hero-bg">
@@ -61,6 +95,11 @@
             </h1>
 
             <div class="hero__grid">
+                <div class="hero__img-container">
+                    <img class="hero__img" src="./img/icons/ico-ruedas.svg" alt="ruedas icon">
+                    <p>Conversión a gas</p>
+                </div>
+
                 <div class="hero__img-container">
                     <img class="hero__img" src="./img/icons/ico-caja.svg" alt="caja icon">
                     <p>Seguridad</p>
@@ -82,11 +121,6 @@
                 </div>
 
                 <div class="hero__img-container">
-                    <img class="hero__img" src="./img/icons/ico-ruedas.svg" alt="ruedas icon">
-                    <p>Unidad de Control</p>
-                </div>
-
-                <div class="hero__img-container">
                     <img class="hero__img" src="./img/icons/ico-seguridad.svg" alt="seguridad icon">
                     <p>Alineación de ruedas</p>
                 </div>
@@ -98,10 +132,10 @@
     <div class="content-grid container">
         <main class="content-main">
             <div class="content-main__grid">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bLvd1IIZ1x8?si=OpPAv7Y8hv8xTqQQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-HMEUQ3RlUk?si=zombobnmUDrBTDML"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
 
                 <div class="content-main__info">
                     <h1 class="heading">Preparados para encargarnos de
@@ -109,17 +143,9 @@
                         <span>todo tipo de vehículos</span>
                     </h1>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laboriosam sint dolorum vel atque
-                        earum
-                        aspernatur dolores nulla incidunt impedit reiciendis beatae, quaerat ea est hic exercitationem
-                        sequi
-                        ad repudiandae!</p>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde dolores repellendus,
-                        dolorem
-                        exercitationem delectus reiciendis odio dicta provident et natus recusandae, est ullam saepe,
-                        ipsam
-                        praesentium! Hic, architecto ducimus.</p>
+                    <p>En AutogasRacho, estamos siempre listos para enfrentar cualquier desafío automotriz que se presente.
+                        Desde coches deportivos hasta camiones de carga, nuestro equipo altamente capacitado está preparado
+                        para manejar cualquier tipo de vehículo que traigas a nuestro taller.</p>
                 </div>
             </div>
         </main>

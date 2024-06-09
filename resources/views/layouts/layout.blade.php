@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -15,24 +16,24 @@
 <body>
 
 <header class="header">
-    <a href="/index.html">
+    <a href="/">
         <h2 class="header__logo">Autogas<span>Racho</span></h2>
     </a>
 
     <div class="header__container">
         <nav class="nav nav--active">
-            <a class="nav__link" href="/index.html">Inicio</a>
-            <a class="nav__link" href="/views/services.html">Servicios</a>
-            <a class="nav__link" href="/views/contact.html">Contacto</a>
-            <a class="nav__link" href="/views/aboutUs.html">Quienes Somos</a>
-            <a class="nav__link" href="/views/reviews.html">Reseñas</a>
+            <a class="nav__link" href="/">Inicio</a>
+            <a class="nav__link" href="/services">Servicios</a>
+            <a class="nav__link" href="/contact">Contacto</a>
+            <a class="nav__link" href="/about">Quienes Somos</a>
+            <a class="nav__link" href="/reviews">Reseñas</a>
         </nav>
 
         <button
             type="button"
             class="header__button"
         >
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
             </svg>
         </button>
@@ -45,11 +46,11 @@
 
 <footer class="footer">
     <nav class="nav">
-        <a class="nav__link" href="/index.html">Inicio</a>
-        <a class="nav__link" href="/views/services.html">Servicios</a>
-        <a class="nav__link" href="/views/contact.html">Contacto</a>
-        <a class="nav__link" href="/views/aboutUs.html">Quienes Somos</a>
-        <a class="nav__link" href="/views/reviews.html">Reseñas</a>
+        <a class="nav__link" href="/index">Inicio</a>
+        <a class="nav__link" href="/services">Servicios</a>
+        <a class="nav__link" href="/contact">Contacto</a>
+        <a class="nav__link" href="/about">Quienes Somos</a>
+        <a class="nav__link" href="/reviews">Reseñas</a>
     </nav>
 
     <p class="copyright">Todos los derechos reservador AutogasRacho @SrPromax:) &copy;</p>

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     nav = $(".nav");
     const navBar = $(".header__button");
-    console.log(navBar)
     navBar.addEventListener("click", toggleNav)
 
     window.addEventListener("resize", resizeNav);
@@ -26,8 +25,6 @@ function resizeNav() {
 }
 
 function toggleNav() {
-
-    console.log("Hiciste click")
 
     if(isNavActive) {
         nav.classList.remove("nav--active");
