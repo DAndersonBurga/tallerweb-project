@@ -9,73 +9,6 @@
         <h1 class="service-hero__title"><span>Precios económicos y una calidad excelente de servicios</span></h1>
     </div>
 </section>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    .content {
-        background-color: #000000;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
-    .menu {
-        background-color: #F5C518;
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
-    }
-    .menu a {
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .main-content {
-        padding: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: space-between;
-    }
-    .section h3 {
-        color: black;
-    }
-    .section img {
-        width: 40em;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .content-main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    .content-main__flex {
-        width: 25rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        border: 1px solid #e1e1e1;
-    }
-
-    .img-container {
-        width: 25rem;
-    }
-
-    .img-container img {
-        width: 25rem;
-        height: 15rem;
-        object-fit: cover;
-    }
-
-</style>
 <nav>
     <div style="text-align: center">
         <div class="content">
@@ -91,6 +24,104 @@
         </div>
     </div>
 </nav>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .content {
+        background-color: #000000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .menu {
+        background-color: #F5C518;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .menu a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .main-content {
+        padding: 80%;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .section h3 {
+        color: black;
+        padding-top: .5rem;
+        text-align: center;
+    }
+
+    .section p {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .section img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .content-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .content-main__flex {
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .img-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    @media (max-width: 768px) {
+        .menu {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-main__flex {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section p {
+            padding: 0.5rem;
+        }
+    }
+
+</style>
 <div class="content-grid container">
     <main class="content-main">
         <div class="content-main__flex">
